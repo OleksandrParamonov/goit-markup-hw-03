@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!--Normalize start-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Normalize end-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,6 +26,7 @@
   <body>
     <!--Шапка профиля-->
     <header class="header">
+      <div class="container">
       <nav class="header-nav">
         <a class="logo-link link" href="/">Web<span class="logo-black">Studio</span></a>
         <ul class="nav-list list">
@@ -46,14 +56,17 @@
     <main>
       <!--Эффективные решения-->
       <section class="hero">
+        <div class="container"></div>
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button class="hero-button" type="button">
           <span class="hero-btn-txt">Заказать услугу</span>
         </button>
+        </div>
       </section>
 
       <!--Преимущества-->
       <section class="advantades">
+        <div class="container">
         <ul class="advantades-list list">
           <li class="advantades-item">
             <h3 class="advantades-title">Внимание к деталям</h3>
@@ -80,10 +93,12 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
 
       <!--Чем занимается-->
       <section class="work">
+        <div class="container">
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="work-list list">
           <li class="work-list-item">
@@ -114,11 +129,13 @@
             />
           </li>
         </ul>
+        </div>
       </section>
 
       <!--Наша команда-->
 
       <section class="command">
+        <div class="container">
         <h2 class="section-title">Наша команда</h2>
         <ul class="command-list list">
           <li class="command-list-item">
@@ -166,12 +183,14 @@
             <p class="command-item">UI Designer</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
 
     <!--Footer-->
 
     <footer class="footer">
+      <div class="container">
       <a class="logo-link link" href="/"> Web<span class="logo-white">Studio</span></a>
       <address class="footer-adress">
         <ul class="adress-list list">
@@ -192,6 +211,7 @@
           </li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>

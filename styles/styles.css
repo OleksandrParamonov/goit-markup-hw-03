@@ -23,11 +23,34 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-txt-cl);
 }
+/*Частичный ресет браузера start*/
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/*Частичный ресет браузера end*/
 .link {
   text-decoration: none;
 }
 .list {
   list-style: none;
+}
+.container {
+  width: 1200px;
 }
 
 /*header*/
@@ -36,9 +59,11 @@ body {
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+  width: 1600px;
 }
 
 .header-nav {
+  display: inline;
 }
 
 .logo-link {
@@ -47,6 +72,9 @@ body {
   font-size: 26px;
   line-height: calc(31 / 26);
   color: var(--accent-txt-cl);
+  margin-top: 25px;
+  margin-left: 215px;
+  margin-right: 93px;
 }
 
 .logo-black {
