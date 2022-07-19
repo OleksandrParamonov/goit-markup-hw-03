@@ -53,8 +53,10 @@ ul {
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.section{
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -64,13 +66,12 @@ ul {
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  width: 1600px;
-  margin-bottom: 200px;
+  margin-left: 0;
 }
 .main-nav {
-display: flex;
-align-items: center;
-justify-content:flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 .header-nav {
   display: flex;
@@ -83,7 +84,6 @@ justify-content:flex-start;
   line-height: calc(31 / 26);
   padding-top: 24px;
   padding-bottom: 24px;
-  margin-left: 215px;
   color: var(--accent-txt-cl);
 }
 
@@ -94,13 +94,10 @@ justify-content:flex-start;
 .nav-list {
   display: flex;
   margin-left: 93px;
-  
 }
-.nav-list .nav-item + .nav-item{
+.nav-list .nav-item + .nav-item {
   margin-left: 50px;
-  
 }
-  
 
 .nav-item {
   color: var(--black-txt-cl);
@@ -110,7 +107,6 @@ justify-content:flex-start;
   color: var(--black-txt-cl);
   padding-top: 32px;
   padding-bottom: 32px;
-
 }
 .current {
   color: var(--accent-txt-cl);
@@ -123,15 +119,13 @@ justify-content:flex-start;
   color: var(--accent-txt-cl);
 }
 
-
 /*contact list*/
 
-
 .contact-list {
-  display:flex ;
+  display: flex;
   margin-left: auto;
 }
-.contact-list .contact-item + .contact-item{
+.contact-list .contact-item + .contact-item {
   margin-left: 50px;
 }
 .contact-item {
@@ -145,8 +139,6 @@ justify-content:flex-start;
 .hero {
   background-color: var(--dark-bg-cl);
   text-align: center;
-  margin-bottom: 92px;
-  width: 1600px;
 }
 
 .hero-title {
@@ -157,9 +149,8 @@ justify-content:flex-start;
   text-transform: uppercase;
   color: var(--white-txt-cl);
   margin-bottom: 30px;
-  margin-left: 452px;
 
-  
+  background-color: tomato;
 }
 
 .hero-button {
@@ -170,7 +161,6 @@ justify-content:flex-start;
   border-radius: 4px;
   display: inline-block;
   padding: 10px 32px;
-  margin-left: 492px;
 }
 .hero-button:hover {
   background: var(--bg-btn-cl);
@@ -186,9 +176,13 @@ justify-content:flex-start;
 /*Преимущества*/
 
 .advantades {
-  margin-bottom: 94px;
 }
-
+.advantades-list {
+  display: flex;
+}
+.advantades-list .advantades-item + .advantades-item {
+  margin-left: 30px;
+}
 .advantades-item {
 }
 
@@ -206,8 +200,9 @@ justify-content:flex-start;
 /*Чем занимается*/
 
 .work {
-  margin-bottom: 94px;
+  padding-top: 0;
 }
+
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -218,13 +213,16 @@ justify-content:flex-start;
 }
 
 .work-list {
+  display: flex;
 }
-
-.work-list-item {
+.work-list .work-item + .work-item {
+  margin-left: 30px;
+}
+.work-item {
+  width: 370px;
 }
 
 .work-img {
-  margin-bottom: 30px;
 }
 
 /*Наша команда*/
@@ -234,12 +232,18 @@ justify-content:flex-start;
 }
 
 .command-list {
+  display: flex;
+}
+.command-list .command-list-item + .command-list-item {
+  margin-left: 30px;
 }
 
 .command-list-item {
+  text-align: center;
 }
 
 .command-img {
+  margin-bottom: 30px;
 }
 
 .command-subtitle {
@@ -248,7 +252,6 @@ justify-content:flex-start;
 .command-item {
   font-size: 16px;
   line-height: calc(19 / 16);
-  text-align: center;
   margin-bottom: 30px;
 }
 .command-subtitle {
@@ -269,6 +272,7 @@ justify-content:flex-start;
 }
 
 .footer-adress {
+  margin-top: 20px;
   font-style: inherit;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -319,7 +323,14 @@ justify-content:flex-start;
   line-height: calc(26 / 16);
   text-align: center;
 }
+/*Portfolio*/
+
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-item {
+  width: 370px;
 }
 .portfolio-link {
 }
