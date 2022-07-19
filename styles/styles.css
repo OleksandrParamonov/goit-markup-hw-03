@@ -54,7 +54,10 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
 }
-
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /*header*/
 
 .header {
@@ -64,8 +67,13 @@ ul {
   width: 1600px;
   margin-bottom: 200px;
 }
-
+.main-nav {
+display: flex;
+align-items: center;
+justify-content:flex-start;
+}
 .header-nav {
+  display: flex;
 }
 
 .logo-link {
@@ -73,10 +81,10 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
-  color: var(--accent-txt-cl);
-  margin-top: 25px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   margin-left: 215px;
-  margin-right: 93px;
+  color: var(--accent-txt-cl);
 }
 
 .logo-black {
@@ -84,12 +92,25 @@ ul {
 }
 
 .nav-list {
+  display: flex;
+  margin-left: 93px;
+  
 }
+.nav-list .nav-item + .nav-item{
+  margin-left: 50px;
+  
+}
+  
+
 .nav-item {
   color: var(--black-txt-cl);
 }
 .nav-link {
+  display: block;
   color: var(--black-txt-cl);
+  padding-top: 32px;
+  padding-bottom: 32px;
+
 }
 .current {
   color: var(--accent-txt-cl);
@@ -102,7 +123,16 @@ ul {
   color: var(--accent-txt-cl);
 }
 
+
+/*contact list*/
+
+
 .contact-list {
+  display:flex ;
+  margin-left: auto;
+}
+.contact-list .contact-item + .contact-item{
+  margin-left: 50px;
 }
 .contact-item {
 }
@@ -115,8 +145,8 @@ ul {
 .hero {
   background-color: var(--dark-bg-cl);
   text-align: center;
-  width: 1600px;
   margin-bottom: 92px;
+  width: 1600px;
 }
 
 .hero-title {
@@ -126,9 +156,10 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-txt-cl);
-  width: 696px;
   margin-bottom: 30px;
-  background-color: red;
+  margin-left: 452px;
+
+  
 }
 
 .hero-button {
@@ -139,6 +170,7 @@ ul {
   border-radius: 4px;
   display: inline-block;
   padding: 10px 32px;
+  margin-left: 492px;
 }
 .hero-button:hover {
   background: var(--bg-btn-cl);
@@ -258,7 +290,7 @@ ul {
 
 /*Projekts*/
 
-.projects-section {
+.projects {
 }
 
 .projects-main-title {
