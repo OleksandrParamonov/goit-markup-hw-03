@@ -285,7 +285,7 @@ height: auto;
 .command-subtitle {
   font-weight: 500;
   font-size: 16px;
-  line-height: calc(19px / 16px);
+  line-height: calc(19 / 16);
   letter-spacing: 0.03em;
   color: var(--black-txt-cl);
 }
@@ -370,7 +370,7 @@ height: auto;
   gap: 30px;
 }
 .portfolio-item {
-  flex-basis: ((100% - 60px)/3);
+  flex-basis: calc((100% - 60px) / 3);
 }
 .portfolio-link {
 }
@@ -387,6 +387,9 @@ border-top: none;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: var(--black-txt-cl);
+  padding-top: 20px;
+  margin-left: 24px;
+  margin-bottom: 4px;
   
 }
 .portfolio-article {
@@ -394,5 +397,7 @@ border-top: none;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--main-txt-cl);
+  margin-left: 24px;
+    margin-bottom: 20px;
   
 }
