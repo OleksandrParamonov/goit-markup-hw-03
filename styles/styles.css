@@ -255,6 +255,9 @@ height: auto;
 
 .command {
   background-color: #F5F4FA;
+  max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .command-list {
