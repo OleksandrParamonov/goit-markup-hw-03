@@ -113,10 +113,11 @@ height: auto;
 
 .nav-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
 }
-.nav-list .nav-item + .nav-item {
-  margin-left: 50px;
-}
+
+
 
 .nav-item {
   color: var(--black-txt-cl);
@@ -124,15 +125,13 @@ height: auto;
 .nav-link ,
 .contact-link {
   display: flex;
+  align-items: center;
   color: var(--black-txt-cl);
   padding-top: 32px;
   padding-bottom: 32px;
 }
 .current {
   color: var(--accent-txt-cl);
-}
-.nav-link {
-
 }
 
 .hover-link:hover,
