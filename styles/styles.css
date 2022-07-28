@@ -77,6 +77,9 @@ img {
   gap: var(--gap);
 }
 
+.card-item {
+  flex-basis: calc((100% - (var(--item) - 1) * var(--gap)) / var(--item));
+}
 /*header*/
 
 .header {
@@ -203,9 +206,7 @@ img {
 
 .advantades-item {
 }
-.card-item {
-  flex-basis: calc((100% - (var(--item) - 1) * var(--gap)) / var(--item));
-}
+
 .advantades-title {
   font-weight: 700;
   font-size: 14px;
@@ -239,7 +240,6 @@ img {
 .work-item {
 }
 .work-item {
-  width: 370px;
 }
 
 .work-img {
